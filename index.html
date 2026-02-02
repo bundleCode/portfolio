@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nilmoni Mustafi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nilmoni Mustafi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Nilmoni profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nilmoni Mustafi</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV_Nilmoni.Mustafi.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/nilmoni-mustafi/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href = 'https://github.com/bundleCode/'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />as a Laravel Full-Stack Developer</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Sc. in Computer Science and Engineering (CSE)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I focus on making elegant and efficient web solutions that meet diverse business needs within defined timelines. I am committed to continuous learning and adopting
+              new technologies to enhance my skill set, while maintaining a strong focus on code quality, performance, and scalability. I value adaptability, clear communication,
+              and collaboration, and I take ownership of my work to deliver reliable solutions that support organizational growth and long-term success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript (ES6+)/jQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Vue.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>WordPress Theme Development</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PHP/OOP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python/OOP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MySQL/PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Database Design(ERD)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>RESTful APIs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GIT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Laravel Deployment (CentOS/cPanel)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#projects'" />
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="projects-wrapper">
+        <!-- SLIDE 1 (2 PROJECTS) -->
+        <div class="projects-slide active">
+          <!-- PROJECT Restaurant -->
+          <div class="details-container color-container">
+            <div class="project-slider" data-slider>
+              <button class="slider-btn prev">&#10094;</button>
+
+              <div class="slider-track">
+                <div class="slide active">
+                  <img src="./assets/inventory-products.png" />
+                  <p class="slide-desc">Inventory management application Product Management.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/inventory-pos.png" />
+                  <p class="slide-desc">Inventory management application POS System</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/inventory-orders-list.png" />
+                  <p class="slide-desc">Inventory management orders list System</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/inventory-staff-list.png" />
+                  <p class="slide-desc">Inventory management staff list System</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/inventory-supplier.png" />
+                  <p class="slide-desc">Inventory management supplier list System</p>
+                </div>
+              </div>
+
+              <button class="slider-btn next">&#10095;</button>
+            </div>
+
+            <h2 class="project-title">Inventory App (Laravel + Vue.js)</h2>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/bundleCode/inventory-backend" target="_blank">Github</a>
+              <!-- <button class="btn btn-color-2 project-btn">Live Demo</button> -->
+            </div>
+          </div>
+
+          <!-- Restaurant Project (Commercial) -->
+          <div class="details-container color-container">
+            <div class="project-slider" data-slider>
+              <button class="slider-btn prev">&#10094;</button>
+
+              <div class="slider-track">
+                <div class="slide active">
+                  <img src="./assets/restaurant-home.png" />
+                  <p class="slide-desc">Restaurant Ecommerce Application - Home Page</p>
+                </div>
+
+                <div class="slide">
+                  <img src="./assets/restaurant-foods.png" />
+                  <p class="slide-desc">Restaurant Ecommerce Application - Food List Page</p>
+                </div>
+
+                <div class="slide">
+                  <img src="./assets/Restaurant-dashboard.png" />
+                  <p class="slide-desc">Restaurant Ecommerce Application - Dashboard Page</p>
+                </div>
+
+                <div class="slide">
+                  <img src="./assets/Restaurant-ecmmerce-orders.png" />
+                  <p class="slide-desc">Restaurant Ecommerce Application - Ecommerce Orderlist Page</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/Restaurant-POS.png" />
+                  <p class="slide-desc">Restaurant Ecommerce Application - POS Sales System</p>
+                </div>
+              </div>
+
+              <button class="slider-btn next">&#10095;</button>
+            </div>
+
+            <h2 class="project-title">Restaurant Ecommerce App with POS Sales(Laravel)</h2>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://amanafoodville.com" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Portals -->
+        <div class="projects-slide">
+          <div class="details-container color-container">
+            <div class="project-slider" data-slider>
+              <button class="slider-btn prev">&#10094;</button>
+              <div class="slider-track">
+                <div class="slide active">
+                  <img src="./assets/job-portal-1.png" />
+                  <p class="slide-desc">Job portal home page.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/Job-portal-all-jobs.png" />
+                  <p class="slide-desc">Job portal jobs listing page.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/job-portal-job-details.png" />
+                  <p class="slide-desc">Job portal job details page.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/job-portal-profile.png" />
+                  <p class="slide-desc">Job portal - employer dashboard & job listings management</p>
+                </div>
+              </div>
+              <button class="slider-btn next">&#10095;</button>
+            </div>
+            <h2 class="project-title">Online Job Portal System(Laravel)</h2>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/bundleCode/lara-job" target="_blank">Github</a>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-slider" data-slider>
+              <button class="slider-btn prev">&#10094;</button>
+              <div class="slider-track">
+                <div class="slide active">
+                  <img src="./assets/amana-group.png" />
+                  <p class="slide-desc">Corporate Website- Home Page.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/AmanaGroup-news.png" />
+                  <p class="slide-desc">Corporate Website- News Page.</p>
+                </div>
+                <div class="slide">
+                  <img src="./assets/AmanaGroup-contactus.png" />
+                  <p class="slide-desc">Corporate Website- Contact Page.</p>
+                </div>
+              </div>
+              <button class="slider-btn next">&#10095;</button>
+            </div>
+            <h2 class="project-title">Corporate Website (WordPress)</h2>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://amanagroupbd.com/" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION NAVIGATION -->
+      <div class="projects-section-nav">
+        <button id="projectsPrev" class="btn btn-color-2 project-btn">❮ <span class="nav-text">Prev</span></button>
+
+        <button id="projectsNext" class="btn btn-color-2 project-btn"><span class="nav-text">Next</span> ❯</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:mustafi32@gmail.com">mustafi32@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/telephone.png" alt="telephone-icon" class="icon contact-icon" />
+          <p><a href="tel:+8801755633747">+8801755633747</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025-2026 nilmoni-mustafi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
